@@ -1,0 +1,69 @@
+@use '../../../styles/helpers' as *;
+
+.my-skills {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: rem(100);
+
+  &__title {
+    font-size: rem(44);
+    margin-bottom: rem(30);
+
+    span {
+      color: var(--text-violet-color);
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__item {
+    position: relative;
+    transition-duration: var(--transition-duration);
+    padding: rem(20);
+    padding-left: rem(45);
+    border-radius: rem(8);
+    font-size: rem(20);
+    box-shadow: var(--shadow);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: rem(15);
+      width: rem(10);
+      height: rem(10);
+      border-radius: 50%;
+      background-color: var(--text-violet-color);
+    }
+
+    @include hover {
+      background-color: var(--dark-color);
+      box-shadow: none;
+    }
+  }
+}
+
+body:has(.light-mode) {
+  transition-duration: var(--transition-duration);
+
+  .my-skills__item {
+    box-shadow: var(--soft-shadow);
+  }
+
+  .my-skills__item:hover {
+    background-color: white;
+    box-shadow: var(--soft-shadow-inside);
+  }
+}

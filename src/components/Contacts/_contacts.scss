@@ -1,0 +1,55 @@
+@use '../../../styles/helpers' as *;
+
+.contacts {
+  padding-block: rem(40);
+  padding-inline: rem(400);
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: rem(36);
+    border-radius: rem(15);
+    box-shadow: var(--shadow);
+    column-gap: rem(110);
+    transition-duration: var(--transition-duration);
+  }
+
+  &__icons-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(85);
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    padding: rem(15);
+    box-shadow: var(--inside-shadow);
+    border-radius: 50%;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(30);
+  }
+
+  &__title {
+    font-size: rem(44);
+
+    span {
+      color: var(--text-violet-color);
+    }
+  }
+}
+
+body:has(.light-mode) {
+  .contacts__icon {
+    box-shadow: var(--soft-shadow-inside);
+  }
+}

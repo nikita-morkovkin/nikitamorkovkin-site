@@ -1,0 +1,129 @@
+@use '../../../styles/helpers' as *;
+
+.portfolio {
+
+  &__title {
+    font-size: rem(44);
+    margin-top: rem(100);
+
+    span {
+      color: var(--text-violet-color);
+    }
+  }
+
+  &__text-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(25);
+    align-items: start;
+  }
+
+  &__icons-list {
+    display: flex;
+    column-gap: rem(16);
+  }
+
+  &__icons-item {
+    padding: rem(15);
+    box-shadow: var(--inside-shadow);
+    border-radius: 50%;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include hover {
+      border: 1px solid var(--text-violet-color);
+    }
+  }
+
+  &__time-element {
+    padding: rem(10);
+    padding-inline: rem(18);
+    color: var(--text-violet-color);
+    box-shadow: var(--inside-shadow);
+    display: inline-block;
+    border-radius: rem(10);
+  }
+
+  &__case-title {
+    font-size: rem(34);
+    position: relative;
+
+    @include hover {
+      cursor: pointer;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -30px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../../../static/icons/link.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  &__list {
+    margin-top: rem(30);
+    flex-direction: column;
+    display: flex;
+    row-gap: rem(24);
+  }
+
+  &__item {
+    padding: rem(36);
+    border-radius: rem(15);
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: rem(110);
+    transition-duration: var(--transition-duration);
+
+    @include hover {
+      box-shadow: var(--inside-shadow);
+    }
+
+    &__image {
+      border-radius: rem(15);
+      box-shadow: var(--shadow-image);
+      transition-duration: var(--transition-duration);
+
+      @include hover {
+        transform: scale(1.05);
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+body:has(.light-mode) {
+  .portfolio__item {
+    box-shadow: var(--soft-shadow);
+
+    &__image {
+      box-shadow: var(--soft-shadow);
+
+      @include hover {
+        box-shadow: none;
+      }
+    }
+
+    @include hover {
+      box-shadow: var(--soft-shadow-inside);
+    }
+  }
+
+  .portfolio__time-element {
+    box-shadow: var(--soft-shadow-inside);
+  }
+
+  .portfolio__icons-item {
+    box-shadow: var(--soft-shadow-inside);
+  }
+}

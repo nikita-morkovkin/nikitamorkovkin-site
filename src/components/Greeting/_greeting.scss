@@ -1,0 +1,49 @@
+@use '../../../styles/helpers' as *;
+
+.greeting {
+  padding-top: rem(100);
+  padding-bottom: rem(100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: rem(150);
+
+  &__title {
+    font-size: rem(48);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    span {
+      color: var(--text-violet-color);
+    }
+  }
+
+  &__button {
+    background-color: var(--basic-site-color);
+    color: var(--text-color);
+    border: 1px solid var(--basic-site-color);
+    border-radius: rem(18);
+    font-size: rem(20);
+    padding-inline: rem(20);
+    padding-block: rem(14);
+    margin-top: rem(40);
+    transition-duration: var(--transition-duration);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+
+    @include hover {
+      border: 1px solid var(--text-violet-color);
+      color: white;
+    }
+  }
+}
+
+body:has(.light-mode) {
+  transition-duration: var(--transition-duration);
+
+  .greeting__button {
+    color: black;
+    box-shadow: var(--soft-shadow);
+  }
+}
