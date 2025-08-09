@@ -19,7 +19,10 @@ import futureTechScreenshot from '../../../static/images/future-tech-image.png';
 
 const Portfolio = () => {
   return (
-    <section className={'portfolio'} id={'portfolio'}>
+    <section
+      className={'portfolio'}
+      id={'portfolio'}
+    >
       <h2 className={'portfolio__title'}>My <span>Portfolio</span></h2>
 
       <ul className="portfolio__list">
@@ -28,14 +31,21 @@ const Portfolio = () => {
             className={'portfolio__item__image'}
             src={futureTechScreenshot}
             alt=""
-            width="400" height="800" loading="lazy"
+            width="400"
+            height="800"
+            loading="lazy"
           />
 
           <div className="portfolio__text-content">
             <div className={'portfolio__time-element'}>
               <p>May 2025</p>
             </div>
-            <a className={'portfolio__case-title'} target={'_blank'} href="https://github.com/nikita-morkovkin/master-class-3">Future Tech AI</a>
+            <a
+              className={'portfolio__case-title'}
+              target={'_blank'}
+              href="https://github.com/nikita-morkovkin/master-class-3"
+            >Future Tech AI
+            </a>
             <p>Multi-page website for a foreign company engaged in the development and promotion of AI</p>
 
             <ul className="portfolio__icons-list">
@@ -66,14 +76,21 @@ const Portfolio = () => {
             className={'portfolio__item__image'}
             src={dentistUIScreenshot}
             alt=""
-            width="400" height="800" loading="lazy"
+            width="400"
+            height="800"
+            loading="lazy"
           />
 
           <div className="portfolio__text-content">
             <div className={'portfolio__time-element'}>
               <p>June 2025</p>
             </div>
-            <a className={'portfolio__case-title'} target={'_blank'} href="https://github.com/nikita-morkovkin/master-class-2">Dentist UI</a>
+            <a
+              className={'portfolio__case-title'}
+              target={'_blank'}
+              href="https://github.com/nikita-morkovkin/master-class-2"
+            >Dentist UI
+            </a>
             <p>A small landing page for a foreign company providing medical services</p>
 
             <ul className="portfolio__icons-list">
@@ -101,14 +118,21 @@ const Portfolio = () => {
             className={'portfolio__item__image'}
             src={sneakersScreenshot}
             alt=""
-            width="400" height="800" loading="lazy"
+            width="400"
+            height="800"
+            loading="lazy"
           />
 
           <div className="portfolio__text-content">
             <div className={'portfolio__time-element'}>
               <p>July 2025</p>
             </div>
-            <a className={'portfolio__case-title'} target={'_blank'} href="https://github.com/nikita-morkovkin/sneakers-shop-online">Sneakers Shop</a>
+            <a
+              className={'portfolio__case-title'}
+              target={'_blank'}
+              href="https://github.com/nikita-morkovkin/sneakers-shop-online"
+            >Sneakers Shop
+            </a>
             <p>A small prototype of a shoe sales website</p>
 
             <ul className="portfolio__icons-list">

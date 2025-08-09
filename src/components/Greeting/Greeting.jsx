@@ -1,6 +1,8 @@
 import React from 'react';
 import './_greeting.scss';
+import {motion} from 'framer-motion';
 import greetingImage from '../../../static/images/image-transparent.png';
+import linkButtonVariants from "./linkButtonVariants.js";
 
 const Greeting = () => {
   return (
@@ -10,13 +12,19 @@ const Greeting = () => {
           <p><span>Hello!</span> My name is <br /> Nikita Morkovkin.</p>
           <p>I can do some great <br /> things for you.</p>
 
-          <a
+          <motion.a
+            initial={linkButtonVariants.initial}
+            whileHover={linkButtonVariants.hover}
+            whileTap={linkButtonVariants.click}
+            transition={{
+              duration: 0.2
+            }}
             className={'greeting__button'}
             type="button"
             href={'#contacts'}
           >
             Let's check!
-          </a>
+          </motion.a>
         </div>
       </div>
 
