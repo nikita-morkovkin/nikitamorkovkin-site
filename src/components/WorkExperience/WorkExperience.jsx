@@ -12,7 +12,6 @@ import htmlIcon from '../../../static/images/html-icon.png';
 import jsIcon from '../../../static/images/js.png';
 import cssIcon from '../../../static/images/css-3.png';
 import reduxIcon from '../../../static/images/redux.png';
-import webdriverIOIcon from '../../../static/images/webdriverIO.png';
 import vitestIcon from '../../../static/images/vitest.png';
 import nodeJSIcon from '../../../static/images/nodejs.png';
 import tailwindCSSIcon from '../../../static/images/tailwind.png';
@@ -26,6 +25,16 @@ import unityIcon from '../../../static/images/unity.png';
 import blenderIcon from '../../../static/images/blender.png';
 import illustratorIcon from '../../../static/images/illustrator.png';
 import webpackIcon from '../../../static/images/webpack.png';
+import reactQueryIcon from '../../../static/images/react-query.png';
+import jestIcon from '../../../static/images/Jest.png';
+import cypressIcon from '../../../static/images/Cypress.png';
+import reactRouterIcon from '../../../static/images/react-router-dom.png';
+import nextIcon from '../../../static/images/Next.js.png';
+import storybookIcon from '../../../static/images/Storybook.png';
+import reactHookForm from '../../../static/images/hook-form.png';
+import sassIcon from '../../../static/images/sass-scss.png';
+import zodIcon from '../../../static/images/zod.png';
+
 
 const WorkExperience = () => {
   return (
@@ -62,16 +71,20 @@ const WorkExperience = () => {
                   titleText={'Figma'}
                 />
                 <TechIcon
+                  pathsToImg={sassIcon}
+                  titleText={'Sass (SCSS)'}
+                />
+                <TechIcon
                   pathsToImg={viteIcon}
                   titleText={'ViteJS'}
                 />
                 <TechIcon
-                  pathsToImg={webpackIcon}
-                  titleText={'Webpack'}
-                />
-                <TechIcon
                   pathsToImg={nodeJSIcon}
                   titleText={'Node.JS'}
+                />
+                <TechIcon
+                  pathsToImg={webpackIcon}
+                  titleText={'Webpack'}
                 />
                 <TechIcon
                   pathsToImg={reactIcon}
@@ -90,6 +103,26 @@ const WorkExperience = () => {
                   titleText={'TypeScript'}
                 />
                 <TechIcon
+                  pathsToImg={reactQueryIcon}
+                  titleText={'React Query'}
+                />
+                <TechIcon
+                  pathsToImg={reactRouterIcon}
+                  titleText={'React Router'}
+                />
+                <TechIcon
+                  pathsToImg={reactHookForm}
+                  titleText={'React Hook Form'}
+                />
+                <TechIcon
+                  pathsToImg={zodIcon}
+                  titleText={'Zod Validation Library'}
+                />
+                <TechIcon
+                  pathsToImg={jestIcon}
+                  titleText={'Jest'}
+                />
+                <TechIcon
                   pathsToImg={vitestIcon}
                   titleText={'Vitest'}
                 />
@@ -98,8 +131,12 @@ const WorkExperience = () => {
                   titleText={'React Testing Library'}
                 />
                 <TechIcon
-                  pathsToImg={webdriverIOIcon}
-                  titleText={'WebdriverIO'}
+                  pathsToImg={cypressIcon}
+                  titleText={'Cypress'}
+                />
+                <TechIcon
+                  pathsToImg={storybookIcon}
+                  titleText={'Storybook'}
                 />
                 <TechIcon
                   pathsToImg={dockerIcon}

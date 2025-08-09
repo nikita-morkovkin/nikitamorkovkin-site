@@ -1,9 +1,6 @@
 import React, {useContext} from 'react';
 import './_header.scss';
 import {ThemeContext} from "../../ThemeContent.jsx";
-import {motion} from 'framer-motion';
-import buttonVariants from "./buttonVariants.js";
-import headerLinkVariants from "./headerLinkVariants.js";
 
 const Header = () => {
   const {toggleTheme} = useContext(ThemeContext);
@@ -11,10 +8,7 @@ const Header = () => {
   return (
     <header className={'header'}>
       <div className="header__inner">
-        <motion.a
-          initial={headerLinkVariants.initial}
-          whileHover={headerLinkVariants.hover}
-          transition={{duration: 0.3}}
+        <a
           className={'header__logo'}
           title={'Go to home'}
           href="/"
@@ -71,81 +65,53 @@ const Header = () => {
               />
             </g>
           </svg>
-        </motion.a>
+        </a>
 
         <ul className="header__menu">
-          <motion.li
-            initial={headerLinkVariants.initial}
-            whileHover={headerLinkVariants.hover}
-            transition={{duration: 0.2}}
-            className="header__menu-item"
-          >
+          <li className="header__menu-item">
             <a
               className={'header__menu-link'}
               href="#about"
             >About
             </a>
-          </motion.li>
-          <motion.li
-            initial={headerLinkVariants.initial}
-            whileHover={headerLinkVariants.hover}
-            transition={{duration: 0.2}}
-            className="header__menu-item"
-          >
+          </li>
+          <li className="header__menu-item">
             <a
               className={'header__menu-link'}
               href="#skills"
             >Skills
             </a>
-          </motion.li>
-          <motion.li
-            initial={headerLinkVariants.initial}
-            whileHover={headerLinkVariants.hover}
-            transition={{duration: 0.2}}
-            className="header__menu-item"
-          >
+          </li>
+          <li className="header__menu-item">
             <a
               className={'header__menu-link'}
               href="#portfolio"
             >Portfolio
             </a>
-          </motion.li>
-          <motion.li
-            initial={headerLinkVariants.initial}
-            whileHover={headerLinkVariants.hover}
-            transition={{duration: 0.2}}
-            className="header__menu-item"
-          >
+          </li>
+          <li className="header__menu-item">
             <a
               className={'header__menu-link'}
               href="#work-experience"
             >Work Experience
             </a>
-          </motion.li>
-          <motion.li
-            initial={headerLinkVariants.initial}
-            whileHover={headerLinkVariants.hover}
-            transition={{duration: 0.2}}
-            className="header__menu-item"
-          >
+          </li>
+          <li className="header__menu-item">
             <a
               className={'header__menu-link'}
               href="#contacts"
             >Contacts
             </a>
-          </motion.li>
+          </li>
         </ul>
 
-        <motion.button
-          initial={buttonVariants.initial}
-          whileHover={buttonVariants.hover}
-          transition={{duration: 0.1}}
+        <button
           className={'header__switch-theme-button'}
           type="button"
           title={'Change theme'}
           onClick={toggleTheme}
         >
-        </motion.button>
+        </button>
       </div>
     </header>
   );
