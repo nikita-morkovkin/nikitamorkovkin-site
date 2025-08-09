@@ -23,6 +23,12 @@
     column-gap: rem(16);
   }
 
+  &__icons-grid {
+    display: grid;
+    gap: rem(16);
+    grid-template-columns: repeat(13, 1fr);
+  }
+
   &__icons-item {
     padding: rem(15);
     box-shadow: var(--inside-shadow);

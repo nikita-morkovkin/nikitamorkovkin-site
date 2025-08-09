@@ -17,11 +17,15 @@ import vitestIcon from '../../../static/images/vitest.png';
 import nodeJSIcon from '../../../static/images/nodejs.png';
 import tailwindCSSIcon from '../../../static/images/tailwind.png';
 import reactTestingLibraryIcon from '../../../static/images/rtl.png';
+import zustandIcon from '../../../static/images/zustand.png';
+import eslintIcon from '../../../static/images/eslint.png';
+import prettierIcon from '../../../static/images/prettier.png';
+import framerMotionIcon from '../../../static/images/framer-motion.png';
 import cSharpIcon from '../../../static/images/c-sharp.png';
 import unityIcon from '../../../static/images/unity.png';
 import blenderIcon from '../../../static/images/blender.png';
 import illustratorIcon from '../../../static/images/illustrator.png';
-
+import webpackIcon from '../../../static/images/webpack.png';
 
 const WorkExperience = () => {
   return (
@@ -40,7 +44,7 @@ const WorkExperience = () => {
               <p className={'work-exp__description'}>
                 I'm studying in college, studying the frontend at the same time.
               </p>
-              <ul className="portfolio__icons-list">
+              <ul className="portfolio__icons-grid">
                 <TechIcon
                   pathsToImg={htmlIcon}
                   titleText={'HTML'}
@@ -62,6 +66,10 @@ const WorkExperience = () => {
                   titleText={'ViteJS'}
                 />
                 <TechIcon
+                  pathsToImg={webpackIcon}
+                  titleText={'Webpack'}
+                />
+                <TechIcon
                   pathsToImg={nodeJSIcon}
                   titleText={'Node.JS'}
                 />
@@ -72,6 +80,10 @@ const WorkExperience = () => {
                 <TechIcon
                   pathsToImg={reduxIcon}
                   titleText={'Redux (Redux Toolkit)'}
+                />
+                <TechIcon
+                  pathsToImg={zustandIcon}
+                  titleText={'Zustand'}
                 />
                 <TechIcon
                   pathsToImg={tsIcon}
@@ -96,6 +108,18 @@ const WorkExperience = () => {
                 <TechIcon
                   pathsToImg={tailwindCSSIcon}
                   titleText={'TailwindCSS'}
+                />
+                <TechIcon
+                  pathsToImg={prettierIcon}
+                  titleText={'Prettier'}
+                />
+                <TechIcon
+                  pathsToImg={eslintIcon}
+                  titleText={'ESLint'}
+                />
+                <TechIcon
+                  pathsToImg={framerMotionIcon}
+                  titleText={'Framer Motion'}
                 />
               </ul>
             </div>

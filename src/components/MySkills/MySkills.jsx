@@ -11,7 +11,7 @@ const MySkills = () => {
             HTML (HTML5), JSX
           </li>
           <li className={'my-skills__item'}>
-            CSS SASS (SCSS), Tailwind
+            CSS SASS (SCSS), Tailwind, Framer Motion
           </li>
           <li className={'my-skills__item'}>
             JavaScript, TypeScript
@@ -26,7 +26,7 @@ const MySkills = () => {
             React Hook Form, Yup, Axios, React Router, React Query
           </li>
           <li className={'my-skills__item'}>
-            Vite
+            Vite, Webpack
           </li>
           <li className={'my-skills__item'}>
             Jest, Vitest, React Testing Library, WebdriverIO
@@ -35,10 +35,10 @@ const MySkills = () => {
             Git (GitHub)
           </li>
           <li className={'my-skills__item'}>
-            Figma, Photoshop
+            Figma, Photoshop, work with AI
           </li>
           <li className={'my-skills__item'}>
-            English level - B1
+            English level - B2
           </li>
         </ul>
       </div>

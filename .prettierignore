@@ -1,0 +1,14 @@
+# Ignore artifacts:
+coverage
+.stylelintrc.json
+stylelint.config.js
+.idea
+index.html
+.gitignore
+package-lock.json
+node_modules
+package.json
+styles
+static
+vite.config.js
+eslint.config.js
