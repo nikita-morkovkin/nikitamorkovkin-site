@@ -29,12 +29,11 @@ import reactQueryIcon from '../../../static/images/react-query.png';
 import jestIcon from '../../../static/images/Jest.png';
 import cypressIcon from '../../../static/images/Cypress.png';
 import reactRouterIcon from '../../../static/images/react-router-dom.png';
-import nextIcon from '../../../static/images/Next.js.png';
+// import nextIcon from '../../../static/images/Next.js.png';
 import storybookIcon from '../../../static/images/Storybook.png';
 import reactHookForm from '../../../static/images/hook-form.png';
 import sassIcon from '../../../static/images/sass-scss.png';
 import zodIcon from '../../../static/images/zod.png';
-
 
 const WorkExperience = () => {
   return (

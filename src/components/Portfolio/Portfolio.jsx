@@ -9,20 +9,16 @@ import reactHookFormIcon from '../../../static/images/hook-form.png';
 import figmaIcon from '../../../static/images/figma.png';
 import dockerIcon from '../../../static/images/docker.png';
 import htmlIcon from '../../../static/images/html-icon.png';
-import sassIcon from '../../../static/images/sass.png';
+import sassIcon from '../../../static/images/sass-scss.png';
 import jsIcon from '../../../static/images/js.png';
-
 import sneakersScreenshot from '../../../static/images/sneakers-shop.png';
 import dentistUIScreenshot from '../../../static/images/dentistUI.png';
 import futureTechScreenshot from '../../../static/images/future-tech-image.png';
 
-
 const Portfolio = () => {
   return (
     <section
-      className={'portfolio'}
-      id={'portfolio'}
-    >
+      className={'portfolio'} id={'portfolio'}>
       <h2 className={'portfolio__title'}>My <span>Portfolio</span></h2>
 
       <ul className="portfolio__list">
@@ -44,7 +40,8 @@ const Portfolio = () => {
               className={'portfolio__case-title'}
               target={'_blank'}
               href="https://github.com/nikita-morkovkin/master-class-3"
-            >Future Tech AI
+            >
+              Future Tech AI
             </a>
             <p>Multi-page website for a foreign company engaged in the development and promotion of AI</p>
 
