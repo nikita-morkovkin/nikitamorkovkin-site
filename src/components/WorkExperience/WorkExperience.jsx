@@ -2,12 +2,10 @@ import React from 'react';
 import './work-experience.scss';
 import TechIcon from "../TechIcon.jsx";
 import '../../../src/components/Portfolio/_portfolio.scss';
-
 import reactIcon from '../../../static/images/react.png';
 import tsIcon from '../../../static/images/typescript.png';
 import viteIcon from '../../../static/images/Vite.js.png';
 import figmaIcon from '../../../static/images/figma.png';
-import dockerIcon from '../../../static/images/docker.png';
 import htmlIcon from '../../../static/images/html-icon.png';
 import jsIcon from '../../../static/images/js.png';
 import cssIcon from '../../../static/images/css-3.png';
@@ -26,14 +24,12 @@ import blenderIcon from '../../../static/images/blender.png';
 import illustratorIcon from '../../../static/images/illustrator.png';
 import webpackIcon from '../../../static/images/webpack.png';
 import reactQueryIcon from '../../../static/images/react-query.png';
-import jestIcon from '../../../static/images/Jest.png';
 import cypressIcon from '../../../static/images/Cypress.png';
 import reactRouterIcon from '../../../static/images/react-router-dom.png';
-// import nextIcon from '../../../static/images/Next.js.png';
+import nextIcon from '../../../static/images/Next.js.png';
 import storybookIcon from '../../../static/images/Storybook.png';
 import reactHookForm from '../../../static/images/hook-form.png';
 import sassIcon from '../../../static/images/sass-scss.png';
-import zodIcon from '../../../static/images/zod.png';
 
 const WorkExperience = () => {
   return (
@@ -114,14 +110,6 @@ const WorkExperience = () => {
                   titleText={'React Hook Form'}
                 />
                 <TechIcon
-                  pathsToImg={zodIcon}
-                  titleText={'Zod Validation Library'}
-                />
-                <TechIcon
-                  pathsToImg={jestIcon}
-                  titleText={'Jest'}
-                />
-                <TechIcon
                   pathsToImg={vitestIcon}
                   titleText={'Vitest'}
                 />
@@ -138,10 +126,6 @@ const WorkExperience = () => {
                   titleText={'Storybook'}
                 />
                 <TechIcon
-                  pathsToImg={dockerIcon}
-                  titleText={'Docker'}
-                />
-                <TechIcon
                   pathsToImg={tailwindCSSIcon}
                   titleText={'TailwindCSS'}
                 />
@@ -156,6 +140,10 @@ const WorkExperience = () => {
                 <TechIcon
                   pathsToImg={framerMotionIcon}
                   titleText={'Framer Motion'}
+                />
+                <TechIcon
+                  pathsToImg={nextIcon}
+                  titleText={'Next.js'}
                 />
               </ul>
             </div>
